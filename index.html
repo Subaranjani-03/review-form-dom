@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        background-image: url(./img/5_asfasw112.jpg);
+        background-size: cover;
+      }
+      form {
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 500px;
+        border-radius: 10px;
+        background-color: white;
+      }
+      form h2 {
+        padding-top: 15px;
+        color: #1e003c;
+        font-size: 2rem;
+
+      }
+      form .form-card {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 20px;
+        /* padding: 10px; */
+      }
+      form .form-card label {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #1e003c;
+      }
+      form .form-card textarea{
+        /* border: none; */
+        border-radius: 10px;
+        padding: 10px;
+        background-color: white;
+      }
+      form .form-card .error{
+        color: red;
+        font-size: .9rem;
+      }
+      form button {
+        width: 200px;
+        padding: 12px 20px;
+        background-color: #1e003c;
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      form .content {
+        /* border: 1px solid; */
+        margin-bottom: 10px;
+        /* width: 350px; */
+        font-size: 1.2rem;
+        color: #1e003c;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h2>Review</h2>
+      <div class="form-card">
+        <label for="content">Share Your Thoughts :</label>
+        <textarea name="content" id="content" rows="10" cols="10"></textarea>
+        <span id="textErr" class="error"></span>
+      </div>
+
+      <button type="button" onclick="regFunc()">SUBMIT</button>
+      <div class="content">
+        <p id="total"></p>
+        <p id="upper"></p>
+        <p id="lower"></p>
+        <p id="num"></p>
+        <p id="special"></p>
+      </div>
+    </form>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
