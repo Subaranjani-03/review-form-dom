@@ -20,6 +20,7 @@ let regFunc = () =>{
     }
     
     // getting para tags
+
     let total = document.getElementById('total')
     let upper = document.getElementById('upper')
     let lower = document.getElementById('lower')
@@ -28,10 +29,12 @@ let regFunc = () =>{
 
 
     // total length
+
     let tot = content.length
     total.innerText = `Total Words : ${tot}`
      
     // upper, lower, number
+    
     let caps = 0;
     let small = 0;
     let number = 0;
